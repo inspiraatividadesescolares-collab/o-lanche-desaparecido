@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Lanche Desaparecido</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <section id="cover" class="screen active">
+      <div class="cover-layout">
+        <div class="cover-left">
+          <div class="big-title">O LANCHE DESAPARECIDO</div>
+          <div class="author">Criado por Edneia Angélica Gomes</div>
+          <p class="cover-text">Um escape room matemático com 30 desafios, 6 níveis e muitas pistas para descobrir quem pegou o lanche de Júlia.</p>
+          <button class="btn btn-primary" onclick="startGame()">COMEÇAR INVESTIGAÇÃO</button>
+        </div>
+        <div class="cover-right">
+          <div class="placeholder-large">[INSERIR IMAGEM DA CAPA AQUI]</div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="story1" class="screen story-screen-cinematic">
+      <div class="story-layout">
+        <div class="story-text-box story-fade-in">
+          <div class="story-kicker">Cena de abertura</div>
+          <div class="section-title">NARRATIVA INICIAL — TELA 1</div>
+          <div class="story-text story-slide-up">
+            <p>Era quarta-feira, de manhã.</p>
+            <p>A turma do 3º ano C, da Escola Paraíso, estava na aula de Matemática com a professora Edneia.</p>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-primary" onclick="showStoryScreen(2)">PRÓXIMA CENA</button>
+          </div>
+        </div>
+        <div class="story-image-box story-zoom-soft">
+          <div class="story-scene-tag">Cena 1 de 6</div>
+          [INSERIR IMAGEM DA NARRATIVA 1 AQUI]
+          <div class="story-caption">Clima de rotina escolar. Tudo parece normal... por enquanto.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story2" class="screen story-screen-cinematic">
+      <div class="story-layout">
+        <div class="story-text-box story-fade-in">
+          <div class="story-kicker">Clima de suspense</div>
+          <div class="section-title">NARRATIVA INICIAL — TELA 2</div>
+          <div class="story-text story-slide-up">
+            <p>Tudo parecia normal...</p>
+            <p>até que Júlia precisou sair da sala para ir ao banheiro.</p>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-secondary" onclick="showStoryScreen(1)">CENA ANTERIOR</button>
+            <button class="btn btn-primary" onclick="showStoryScreen(3)">PRÓXIMA CENA</button>
+          </div>
+        </div>
+        <div class="story-image-box story-zoom-soft">
+          <div class="story-scene-tag">Cena 2 de 6</div>
+          [INSERIR IMAGEM DA NARRATIVA 2 AQUI]
+          <div class="story-caption">Júlia se afasta de sua carteira. É nesse instante que a história muda.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story3" class="screen story-screen-cinematic">
+      <div class="story-layout">
+        <div class="story-text-box story-fade-in">
+          <div class="story-kicker">Movimentos suspeitos</div>
+          <div class="section-title">NARRATIVA INICIAL — TELA 3</div>
+          <div class="story-text story-slide-up">
+            <p>Enquanto ela esteve fora, Thales, que se sentava na frente de Júlia, foi até a lixeira para apontar o seu lápis.</p>
+            <p>Vera, que se sentava do lado direito de Júlia, levantou-se para mostrar um adesivo à Ana.</p>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-secondary" onclick="showStoryScreen(2)">CENA ANTERIOR</button>
+            <button class="btn btn-primary" onclick="showStoryScreen(4)">PRÓXIMA CENA</button>
+          </div>
+        </div>
+        <div class="story-image-box story-zoom-soft">
+          <div class="story-scene-tag">Cena 3 de 6</div>
+          [INSERIR IMAGEM DA NARRATIVA 3 AQUI]
+          <div class="story-caption">Num instante, vários colegas se movimentam ao mesmo tempo.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story4" class="screen story-screen-cinematic">
+      <div class="story-layout">
+        <div class="story-text-box story-fade-in">
+          <div class="story-kicker">Atenção da professora</div>
+          <div class="section-title">NARRATIVA INICIAL — TELA 4</div>
+          <div class="story-text story-slide-up">
+            <p>Patrícia, que se sentava do lado esquerdo de Júlia, virou-se para trás e pediu uma borracha emprestada.</p>
+            <p>A professora Edneia não gostou de toda aquela movimentação e pediu que todos se sentassem e fizessem a atividade em silêncio.</p>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-secondary" onclick="showStoryScreen(3)">CENA ANTERIOR</button>
+            <button class="btn btn-primary" onclick="showStoryScreen(5)">PRÓXIMA CENA</button>
+          </div>
+        </div>
+        <div class="story-image-box story-zoom-soft">
+          <div class="story-scene-tag">Cena 4 de 6</div>
+          [INSERIR IMAGEM DA NARRATIVA 4 AQUI]
+          <div class="story-caption">A ordem volta para a sala. Mas talvez já seja tarde demais.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story5" class="screen story-screen-cinematic">
+      <div class="story-layout">
+        <div class="story-text-box story-fade-in">
+          <div class="story-kicker">Declaração suspeita</div>
+          <div class="section-title">NARRATIVA INICIAL — TELA 5</div>
+          <div class="story-text story-slide-up">
+            <p>Pedro, que se sentava atrás de Júlia, disse:</p>
+            <p class="quote">“Eu só fui pegar o meu apontador que caiu!”</p>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-secondary" onclick="showStoryScreen(4)">CENA ANTERIOR</button>
+            <button class="btn btn-primary" onclick="showStoryScreen(6)">PRÓXIMA CENA</button>
+          </div>
+        </div>
+        <div class="story-image-box story-zoom-soft">
+          <div class="story-scene-tag">Cena 5 de 6</div>
+          [INSERIR IMAGEM DA NARRATIVA 5 AQUI]
+          <div class="story-caption">Uma frase rápida. Uma explicação simples. Mas será que é verdade?</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story6" class="screen story-screen-cinematic">
+      <div class="story-layout">
+        <div class="story-text-box story-fade-in">
+          <div class="story-kicker">O mistério começa</div>
+          <div class="section-title">NARRATIVA INICIAL — TELA 6</div>
+          <div class="story-text story-slide-up">
+            <p>Quando estava perto da hora do recreio, Júlia pegou sua mochila do chão e procurou o lanche.</p>
+            <p>Procurou uma vez, duas vezes… e nada. O lanche havia desaparecido.</p>
+            <p>Assustada e triste, ela avisou imediatamente a professora, que decidiu investigar o caso com atenção.</p>
+            <p class="objective-text">OBJETIVO: resolva os desafios de Matemática, colete pistas e descubra quem pegou o lanche de Júlia.</p>
+          </div>
+          <div class="button-row">
+            <button class="btn btn-secondary" onclick="showStoryScreen(5)">CENA ANTERIOR</button>
+            <button class="btn btn-primary" onclick="goToFirstQuestion()">INICIAR INVESTIGAÇÃO</button>
+          </div>
+        </div>
+        <div class="story-image-box story-zoom-soft">
+          <div class="story-scene-tag">Cena 6 de 6</div>
+          [INSERIR IMAGEM DA NARRATIVA 6 AQUI]
+          <div class="story-caption">O lanche sumiu. Agora, cada desafio pode revelar a verdade.</div>
+        </div>
+      </div>
+    </section>
+<section id="question" class="screen">
+      <div class="question-layout">
+        <div class="question-left">
+          <div class="challenge-title" id="challengeTitle">DESAFIO 1</div>
+          <div class="prompt-box" id="promptBox"></div>
+          <div class="bottom-mascot-area">
+            <div class="mascot-box">[INSERIR IMAGEM DECORATIVA AQUI]</div>
+          </div>
+        </div>
+
+        <div class="question-middle" id="choicesBox"></div>
+
+        <div class="question-right">
+          <div class="info-card-blue">
+            <div>
+              <div class="info-level" id="levelLabel">Nível 1</div>
+              <div class="points-label">PONTOS</div>
+              <div class="points-value" id="scoreValue">00</div>
+            </div>
+            <div class="timer-wrap">
+              <div class="timer-circle" id="timerCircle">
+                <div class="timer-inner" id="timerValue">60</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card-pink">
+            <div class="clue-title">PISTAS:</div>
+            <div class="clue-list" id="cluesBox">
+              <div class="empty-clue">Resolva as questões para liberar pistas.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="correct" class="screen">
+      <div class="center-wrap">
+        <div class="big-title">RESPOSTA CERTA!</div>
+        <div class="final-message">Muito bem! Você ganhou pontos e encontrou uma nova pista para a investigação.</div>
+        <div class="placeholder-large">[INSERIR IMAGEM DE ACERTO AQUI]</div>
+        <button class="btn btn-primary" onclick="goNext()">PRÓXIMA QUESTÃO</button>
+      </div>
+    </section>
+
+    <section id="wrong" class="screen">
+      <div class="center-wrap">
+        <div class="big-title">RESPOSTA ERRADA!</div>
+        <div class="final-message">Essa não era a alternativa correta. Tente novamente para continuar a investigação.</div>
+        <div class="placeholder-large">[INSERIR IMAGEM DE ERRO AQUI]</div>
+        <button class="btn btn-primary" onclick="restartCurrentQuestion()">TENTAR DE NOVO</button>
+      </div>
+    </section>
+
+    <section id="timeout" class="screen">
+      <div class="center-wrap">
+        <div class="big-title">TEMPO ESGOTADO!</div>
+        <div class="final-message">O cronômetro chegou ao fim. Respire fundo e tente responder novamente.</div>
+        <div class="placeholder-large">[INSERIR IMAGEM DE TEMPO ESGOTADO AQUI]</div>
+        <button class="btn btn-primary" onclick="restartCurrentQuestion()">REFAZER QUESTÃO</button>
+      </div>
+    </section>
+
+    <section id="suspect" class="screen">
+      <div class="center-wrap">
+        <div class="section-title">QUEM PEGOU O LANCHE?</div>
+        <div class="final-message">Você chegou ao fim da investigação. Analise as pistas e escolha o suspeito.</div>
+        <div class="suspect-grid" id="suspectGrid"></div>
+        <button class="btn btn-primary" id="confirmSuspectBtn" onclick="finishInvestigation()" disabled>CONFIRMAR SUSPEITO</button>
+      </div>
+    </section>
+
+    <section id="victory" class="screen">
+      <div class="center-wrap">
+        <div class="big-title">CASO RESOLVIDO!</div>
+        <div class="final-message">Parabéns! As pistas mostram que <strong>Pedro</strong> pegou o lanche de Júlia.</div>
+        <div class="solution-box">Pedro estava sentado atrás de Júlia e sua desculpa sobre o apontador chamou a atenção. Pela posição em que estava, ele era quem tinha mais facilidade para alcançar a mochila sem ser notado de frente.</div>
+        <div class="placeholder-large">[INSERIR IMAGEM DE VITÓRIA AQUI]</div>
+        <button class="btn btn-primary" onclick="fullRestart()">JOGAR NOVAMENTE</button>
+      </div>
+    </section>
+
+    <section id="finalWrong" class="screen">
+      <div class="center-wrap">
+        <div class="big-title">INVESTIGAÇÃO INCONCLUSA</div>
+        <div class="final-message">Esse suspeito não corresponde às pistas encontradas. Revise a investigação e tente outra vez.</div>
+        <div class="placeholder-large">[INSERIR IMAGEM DE SUSPENSE AQUI]</div>
+        <div class="button-row">
+          <button class="btn btn-secondary" onclick="showScreen('suspect')">ESCOLHER OUTRO SUSPEITO</button>
+          <button class="btn btn-primary" onclick="fullRestart()">REINICIAR JOGO</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
